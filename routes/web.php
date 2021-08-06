@@ -44,6 +44,23 @@ Route::group(['prefix' => 'dashboard', 'namespace' => 'Dashboard', 'as' => 'dash
     Route::post('/pdfs/url', 'PdfController@export_document_url')->name('pdfs.export_document_url');
     Route::get('/pdfs/view', 'PdfController@export_by_view')->name('pdfs.export_by_view');
 
+    Route::get('/graphics/vistahumedadambiente', 'GraphicsController@consultagraphics_view')->name('graphics.consultagraphics_view');
+    Route::post('/graphics/vistahumedadambiente', 'GraphicsController@respuestagraphics_view')->name('graphics.respuestagraphics_view');
+
+    Route::get('/graphics/vistahumedadsuelo', 'GraphicshsController@consultagraphicshumedads_view')->name('graphics.consultagraphicshumedads_view');
+    Route::post('/graphics/vistahumedadsuelo', 'GraphicshsController@respuestagraphicshumedads_view')->name('graphics.respuestagraphicshumedads_view');
+    
+    Route::get('/graphics/vistatemperatura', 'GraphicsteController@consultagraphicstemperatura_view')->name('graphics.consultagraphicstemperatura_view');
+    Route::post('/graphics/vistatemperatura', 'GraphicsteController@respuestagraphicstemperatura_view')->name('graphics.respuestagraphicstemperatura_view');
+    
+    Route::get('/graphics/vistalitros', 'GraphicsliController@consultagraphicslitros_view')->name('graphics.consultagraphicslitros_view');
+    Route::post('/graphics/vistalitros', 'GraphicsliController@respuestagraphicslitros_view')->name('graphics.respuestagraphicslitros_view');
+    
+    Route::get('/graphics/tiemporealha', 'GraphicsrealhaController@consultagraphicsrealha_view')->name('graphics.consultagraphicsrealha_view');
+    Route::get('/graphics/tiemporealhs', 'GraphicsrealhsController@consultagraphicsrealhs_view')->name('graphics.consultagraphicsrealhs_view');
+    Route::get('/graphics/tiemporealte', 'GraphicsrealteController@consultagraphicsrealte_view')->name('graphics.consultagraphicsrealte_view');
+
+    Route::get('/graphics/encenderapagar', 'GraphicsrealonoffController@consultagraphicsrealonoff_view')->name('graphics.consultagraphicsrealonoff_view');
 
   });
 

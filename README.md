@@ -1,59 +1,3 @@
-# Laravel Admin Panel
-
-[![N|Solid](https://camo.githubusercontent.com/5ceadc94fd40688144b193fd8ece2b805d79ca9b/68747470733a2f2f6c61726176656c2e636f6d2f6173736574732f696d672f636f6d706f6e656e74732f6c6f676f2d6c61726176656c2e737667)](https://laravel.com/)[![N|Solid](https://c.disquscdn.com/uploads/users/7757/9394/avatar92.jpg?1549409473)](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2)
-
-Siempre es un problema el no tener por donde comenzar hay tantos paneles de administración con mucho codigo Espagueti por todos lados, mezclas de jquery etc.....
-
-Este admin panel esta hecho para facilitar la vida a quienes quieran comenzar con el hermoso framework de laravel :heart: usando como base de front lo que nos entregan en https://startbootstrap.com/themes/sb-admin-2/ Se mantendra actualizado con la ultima versión de laravel y contendra ejemplo de usos de variadas librerias.
-
-![N|Solid](https://i.ibb.co/5jGF2jS/Captura-de-Pantalla-2019-06-10-a-la-s-12-53-45.png)![N|Solid](https://i.ibb.co/VD2zq4b/Captura-de-Pantalla-2019-06-10-a-la-s-12-53-34.png)![N|Solid](https://i.ibb.co/6rryTsX/Captura-de-Pantalla-2019-06-17-a-la-s-00-05-50.png)![N|Solid](https://i.ibb.co/jZSMhj4/screencapture-127-0-0-1-8000-dashboard-pdfs-2019-06-20-12-32-46.png)
-
-El panel de administración cuenta con lo siguiente :
-
-
-### Packages
-
-
-
-| package | README |
-| ------ | ------ |
-| Permisos y Roles - laravel-permission | [GitHub](https://github.com/spatie/laravel-permission) |
-| Validación de formularios - laravel-jsvalidation | [GitHub](https://github.com/proengsoft/laravel-jsvalidation)
-| Exportación de Excel - laravel-excel | [GitHub](https://github.com/maatwebsite/Laravel-Excel)
-| Exportación de pdf - laravel-snappy | [GitHub](https://github.com/barryvdh/laravel-snappy)
-
-
-OJO con este package, es necesario instalar un binario en tu maquina, que puedes descargar aqui https://wkhtmltopdf.org/downloads.html
-
-Cuando sea instalado en tu maquina debes configurar en config/snappy.php la direccion del binario
-
-
-
-```sh
-'binary'  => '/usr/local/bin/wkhtmltopdf-amd64',
-```
-
-### Package NPM
-
-
-
-| package | README |
-| ------ | ------ |
-| @fortawesome/fontawesome-free | [Package](https://www.npmjs.com/package/@fortawesome/fontawesome-free) |
-| datatables.net | [Package](https://www.npmjs.com/package/datatables.net)
-| datatables.net-bs | [Package](https://www.npmjs.com/package/datatables.net-bs)
-| datatables.net-responsive | [Package](https://www.npmjs.com/package/datatables.net-responsive)
-| datatables.net-responsive-bs | [Package](https://www.npmjs.com/package/datatables.net-responsive-bs)
-| daterangepicker | [Package](https://www.npmjs.com/package/daterangepicker)
-| moment | [Package](https://www.npmjs.com/package/moment)
-| select2 | [Package](https://www.npmjs.com/package/select2)
-| select2-bootstrap-theme | [Package](https://www.npmjs.com/package/select2-bootstrap-theme)
-| switchery | [Package](https://www.npmjs.com/package/switchery)
-| sweetalert2 | [Package](https://www.npmjs.com/package/sweetalert2)
-| @ckeditor/ckeditor5-build-decoupled-document | [Package](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-decoupled-document)
-
-
-
 ### Instalación
 
 Requisitos previos  :
@@ -68,49 +12,8 @@ PHP 7.2 >
 
 Install the dependencies and devDependencies and start the server.
 
-```sh
-$ git clone https://github.com/DiruzCode/laravel-admin-template.git
-$ cd laravel-admin-template
+```
 $ npm install
 $ composer install
 ```
 
-Configurar Laravel-mix ...
-
-```sh
-$ npm run dev
-```
-Configurar .env ...
-
-```sh
-$ cp .env.example .env
-$ php artisan key:generate
-```
-
-Base de datos ...
-
-```sh
-$ php artisan migrate --seed
-```
-
-
-Arranca Laravel, puedes usar diferentes formas
-
-```sh
-$ php artisan serve
-$ php artisan serve --port=port
-$ php artisan serve --host=myhost --port=port
-```
-Por defecto correra en la siguiente ip
-```sh
-127.0.0.1:8000
-```
-
-### Desarrolladores
-
-Quieren contribuir? Genial! son libres de hacerlo :D
-
-
-## Licencia
-
-Este panel de administrador en Laravel framework es de codigo abierto bajo la licencia [MIT license](https://opensource.org/licenses/MIT).

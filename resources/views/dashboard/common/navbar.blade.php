@@ -25,6 +25,9 @@
   </div>
 
   <!-- Nav Item - Utilities Collapse Menu -->
+
+
+
   <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
       <i class="fas fa-fw fa-wrench"></i>
@@ -51,6 +54,46 @@
     </div>
   </li>
 
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities3" aria-expanded="true" aria-controls="collapseUtilities3">
+      <i class="fas fa-fw fa-wrench"></i>
+      <span>Control de Riego</span>
+    </a>
+    <div id="collapseUtilities3" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <a class="collapse-item" href="{{ route('dashboard::graphics.consultagraphics_view') }}">Humedad Ambiente</a>
+        <a class="collapse-item" href="{{ route('dashboard::graphics.consultagraphicshumedads_view') }}">Humedad Suelo</a>
+        <a class="collapse-item" href="{{ route('dashboard::graphics.consultagraphicstemperatura_view')}}">Temperatura Ambiente</a>
+        <a class="collapse-item" href="{{ route('dashboard::graphics.consultagraphicslitros_view')}}">Consumo litros</a>
+      </div>
+    </div>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities4" aria-expanded="true" aria-controls="collapseUtilities4">
+      <i class="fas fa-fw fa-wrench"></i>
+      <span>Monitoreo tiempo real</span>
+    </a>
+    <div id="collapseUtilities4" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+      <a class="collapse-item" href="{{ route('dashboard::graphics.consultagraphicsrealha_view') }}">Humedad Ambiente</a>
+      <a class="collapse-item" href="{{ route('dashboard::graphics.consultagraphicsrealhs_view') }}">Humedad suelo</a>
+      <a class="collapse-item" href="{{ route('dashboard::graphics.consultagraphicsrealte_view') }}">Temperatura</a>
+      </div>
+    </div>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities5" aria-expanded="true" aria-controls="collapseUtilities5">
+      <i class="fas fa-fw fa-wrench"></i>
+      <span>Riego Manual</span>
+    </a>
+    <div id="collapseUtilities5" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+      <a class="collapse-item" href="{{ route('dashboard::graphics.consultagraphicsrealonoff_view') }}">Encender/Apagar Riego</a>
+      </div>
+    </div>
+  </li>
 
 
   <!-- Divider -->
